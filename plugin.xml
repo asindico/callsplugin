@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="callsplugin"
+    version="0.2">
+    <name>CallsPlugin</name>
+    <description>Get the list of Phone Calls</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,calls log</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="./www/CallsPlugin.js" name="CallsPlugin">
+        <clobbers target="calls" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CallsPlugin" >
+                <param name="android-package" value="android.plugin.calls.Calls"/>
+            </feature>
+        </config-file>
+        <source-file src="android/plugin/calls/Calls.java" target-dir="src/" />
+    </platform>
+
+</plugin>
