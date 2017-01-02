@@ -6,8 +6,9 @@
     <name>CallsPlugin</name>
     <description>Get the list of Phone Calls</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,calls log</keywords>
-    <repo></repo>
+    <keywords>"ecosystem:cordova",
+    "cordova-android","calls","log"</keywords>
+    <repo>https://github.com/asindico/callsplugin</repo>
     <issue></issue>
 
     <js-module src="./www/CallsPlugin.js" name="CallsPlugin">

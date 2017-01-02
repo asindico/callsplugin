@@ -4,13 +4,13 @@ function CallsPlugin() {
  console.log("CallsPlugin.js: is created");
 }
 
-CallsPlugin.prototype.getCalls = function(callback,error){
+CallsPlugin.prototype.getCalls = function(callback,error,service,action,parameters){
         console.log("getCALLS");
         cordova.exec(function(winParam) {callback(winParam)},
              function(e) {error(e)},
              "CallsPlugin",
-             "all",
-             []);
+             action,
+             parameters);
 
 };
 
