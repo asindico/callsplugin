@@ -30,3 +30,5 @@ calls.getCalls(function(res){
 the range `[firstCall,lastCall]` represents the indexex of the calls to fetch starting from the latest call and proceding backward. 
 This allows you to fetch buches of calls depending on the user need (i.e. scroll down, etc.) avoiding to slow down the whole app.
 
+Please remembr to add at least this permission <uses-permission android:name="android.permission.READ_CALL_LOG" />
+ to your app manifest. Otherwise the app will crash for a permission denied exception.
