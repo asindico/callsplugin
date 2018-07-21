@@ -102,6 +102,7 @@ public class Calls extends CordovaPlugin {
                     call.put("date", prettyDate);
                     call.put("type", dir);
                     call.put("caller", caller);
+                    call.put("duration", callDuration);
                     calls.put(call);
                 } catch (JSONException e) {
                     e.printStackTrace();
