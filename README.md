@@ -18,6 +18,7 @@ calls.getCalls(function(res){
                     var type = calls[i].type;
                     var date = calls[i].date;
                     var caller = calls[i].caller;
+                    var duration = calls[i].duration;
                  }    
                 }
                 ,function(error){console.log(error);}
